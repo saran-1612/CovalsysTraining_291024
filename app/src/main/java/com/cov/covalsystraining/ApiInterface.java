@@ -25,4 +25,7 @@ public interface ApiInterface {
 
     @GET("api/Login/getEmployeeActivity")
     Call<ListModel> getList(@Query("EmpId") String empid);
+
+    /*@GET("api/Login/getEmployeeActivity")
+    Call<ListModel> getList(@Query("EmpId") String empid);*/
 }
