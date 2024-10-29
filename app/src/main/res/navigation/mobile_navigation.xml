@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.cov.covalsystraining.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_emplist"
+        android:name="com.cov.covalsystraining.ui.employee.EmployeeFragment"
+        android:label="Employee List"
+        tools:layout="@layout/fragment_recycler"
+        >
+        <action
+            android:id="@+id/action_nav_emplist_to_nav_activitylist"
+            app:destination="@id/nav_activitylist" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_form"
+        android:name="com.cov.covalsystraining.ui.gallery.ActivityFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_activity" />
+
+    <activity
+        android:id="@+id/nav_activitylist"
+        android:name="com.cov.covalsystraining.ui.list.ListActivity"
+        android:label="@string/menu_activity"
+        tools:layout="@layout/activity_list" />
+
+</navigation>

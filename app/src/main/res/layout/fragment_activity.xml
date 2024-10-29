@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="18dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp">
+
+            <!-- First CardView for Task Details -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="15dp"
+                android:elevation="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:paddingEnd="10dp"
+                    android:background="@color/white">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Task Form"
+                        android:textSize="30dp"
+                        android:textStyle="bold"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:textAlignment="center"/>
+
+                    <!-- Task Name -->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Task Name :"
+                        android:textSize="18sp"
+                        android:layout_marginTop="7dp"
+                        android:textStyle="bold" />
+
+                    <!-- Task Name EditText -->
+                    <EditText
+                        android:id="@+id/editTextTaskName"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="8dp"
+                        android:hint="Enter Task Name"
+                        android:textSize="20dp"
+                        android:textStyle="normal"
+                        android:textColor="@color/black"
+                        android:textAlignment="center"
+                        android:background="@drawable/round_outline1"/>
+
+                    <!-- Time Duration -->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:text="Time Duration :"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+                    <!-- Time Duration EditText -->
+                    <EditText
+                        android:id="@+id/editTextTimeDuration"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="8dp"
+                        android:hint="Enter Time Duration"
+                        android:inputType="text"
+                        android:textStyle="normal"
+                        android:textSize="20dp"
+                        android:textColor="@color/black"
+                        android:textAlignment="center"
+                        android:background="@drawable/round_outline1"/>
+
+                    <!-- Start Date -->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:text="Start Date :"
+                        android:id="@+id/textStartDateView"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <!-- Start Date EditText -->
+                    <EditText
+                        android:id="@+id/editTextStartDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="8dp"
+                        android:hint="Enter Start Date"
+                        android:inputType="date"
+                        android:textSize="20dp"
+                        android:clickable="false"
+                        android:cursorVisible="false"
+                        android:layout_centerInParent="true"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:textStyle="normal"
+                        android:textColor="@color/black"
+                        android:gravity="center"
+                        android:background="@drawable/round_outline1"/>
+
+                    <!-- End Date -->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:text="End Date :"
+                        android:id="@+id/textEndDateView"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <!-- End Date EditText -->
+                    <EditText
+                        android:id="@+id/editTextEndDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="8dp"
+                        android:hint="Enter End Date"
+                        android:textSize="20dp"
+                        android:textStyle="normal"
+                        android:clickable="false"
+                        android:cursorVisible="false"
+                        android:layout_centerInParent="true"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:inputType="date"
+                        android:background="@drawable/round_outline1"/>
+
+                    <!-- Remarks -->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:text="Remarks :"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <!-- Remarks EditText -->
+                    <EditText
+                        android:id="@+id/editTextRemarks"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:gravity="top|center"
+                        android:textSize="20dp"
+                        android:textStyle="normal"
+                        android:hint="Enter Remarks"
+                        android:textColor="@color/black"
+                        android:inputType="textMultiLine"
+                        android:lines="4"
+                        android:background="@drawable/round_outline1"/>
+
+                    <!-- Status -->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:text="Status :"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <!-- Status EditText -->
+                    <Spinner
+                        android:id="@+id/editTextStatus"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="8dp"
+                        android:spinnerMode="dropdown"
+                        android:textSize="20dp"
+                        android:textStyle="normal"
+                        android:textColor="@color/black"
+                        android:entries="@array/status"
+                        android:background="@drawable/round_outline1"/>
+
+                    <!-- Submit Button -->
+                    <Button
+                        android:id="@+id/buttonSubmit"
+                        android:layout_width="170dp"
+                        android:layout_height="48dp"
+                        android:textSize="20dp"
+                        android:layout_marginTop="25dp"
+                        android:background="@drawable/round_outline1"
+                        android:backgroundTint="#228B22"
+                        android:layout_marginStart="90dp"
+                        android:layout_marginEnd="50dp"
+                        android:text="Submit" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
